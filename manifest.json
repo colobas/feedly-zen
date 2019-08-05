@@ -1,0 +1,18 @@
+{
+
+  "description": "Hides unread counters from Feedly",
+  "manifest_version": 2,
+  "name": "Feedly-Zen",
+  "version": "0.0.1",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.feedly.com/*", "*://feedly.com/*"],
+      "js": ["zen.js"]
+    }
+  ]
+
+}
